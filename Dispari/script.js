@@ -10,6 +10,7 @@ Dichiariamo chi ha vinto.
  */
 
 const pariDispari = prompt('Pari o Dispari?')
+console.log(pariDispari)
 
 const randomUser = numberRandom(5, 1);
 console.log(randomUser);
@@ -20,15 +21,17 @@ console.log(randomPc);
 let somma = randomUser + randomPc;
 console.log(somma)
 
-const sommaValue = ('');
+let sommaValue = ('');
 
 if (somma % 2 === 0){
-    sommaValue === ('pari');
+    let sommaValue = ('pari');
+    console.log(sommaValue);
 }else{
-    sommaValue === ('dispari');
+    let sommaValue = ('dispari');
+    console.log(sommaValue);
 }
 
-if( sommaValue === pariDispari){
+if( sommaValue.length = pariDispari.length){
     alert('Hai vinto');
 }else{
     alert('Hai perso, vince il PC')
